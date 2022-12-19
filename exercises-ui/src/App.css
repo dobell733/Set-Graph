@@ -1,0 +1,250 @@
+/*   ----- Imports  -----  */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&display=swap');
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+* {
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(resources/workout-background-img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  height: 100px;
+  padding: 20px;
+  padding-top: 38px;
+}
+nav a {
+  padding: 10px 20px;
+  margin: 10px 15px;
+  background-color: #11d16c;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s;
+}
+nav a span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+nav a span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+nav a:hover span {
+  padding-right: 25px;
+}
+nav a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #11d16c;
+}
+
+footer a:hover {
+  color: #FFF
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+  background-color: #111111;
+  font-size: larger;
+  font-weight: bold;
+  height: 180px;
+  max-width: 1000px;
+  overflow: auto;
+  margin: 10px auto;
+  border-radius: 25px;
+  opacity: 90%;
+}
+header p {
+  color: #fff;
+}
+main {
+  color:#AEAEAE;
+  min-height: 100vh;
+  overflow: auto;
+}
+#main-wrapper {
+  padding-bottom: 100px;
+}
+footer {
+  color: #FFF;
+  background-color: #111111;
+  font-size: large;
+  font-weight: normal;
+  height: 100px;
+  position: relative;
+  margin-top: -100px;
+  padding-top: 27px;
+  max-width: 1000px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  opacity: 90%;
+}
+
+/*  -----  Typography  ----- */
+p {
+  padding: 0px 30px;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+h1 {
+  color: #11d16c;
+}
+h2 {
+  color: #FC9600;
+}
+
+/*  ----- Table ----- */
+table {
+  text-align: center;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 25px;
+  background-color: rgb(43, 43, 43);
+  color: #AEAEAE;
+  overflow: hidden;
+  font-family: 'Inconsolata', monospace;
+}
+th {
+  padding: 11px;
+  font-family: 'Lato', sans-serif;
+}
+td { 
+  border-top: 0.01rem solid #AEAEAE;
+  padding: 11px;
+}
+thead tr:hover {
+  background-color: rgb(43, 43, 43);
+  border-top-left-radius: 25px;
+}
+thead tr th:first-child{
+  border-top-left-radius: 25px;
+}
+thead tr th:last-child {
+  border-top-right-radius: 25px;
+}
+tbody tr td:nth-child(2) {
+  color: #11d16c
+}
+tbody tr td:nth-child(3), tbody tr td:nth-child(4) {
+  color: #FC9600
+}
+tr:hover {
+  background-color: #353535 ;
+  border-top-right-radius: 25px;
+}
+caption {
+  margin-top: 40px;
+  padding-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+}
+
+/*  ----- Form ----- */
+fieldset {
+  border: 0;
+}
+legend {
+  color: #fff;
+}
+label {
+  display: block;
+  color: #fff;
+  padding-top: 15px;
+}
+input, select {
+  padding: 12px;
+  font-family: 'Inconsolata', monospace;
+  margin-top: 5px;
+  background-color: rgb(43, 43, 43);
+  color: #AEAEAE;
+  border-radius: 10px;
+  border: 1px solid #11d16c;
+  width: 200px;
+  font-size: large;
+}
+#create-paragraph {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+button {
+  padding: 10px 20px;
+  margin: 20px 15px;
+  background-color: #11d16c;
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+}
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+button:hover span {
+  padding-right: 25px;
+}
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*  ----- Class/ID Properties ----- */
+.delete-icon {
+  color: #E05951;
+}
+.delete-icon:hover, .edit-icon:hover {
+  cursor: pointer;
+}
+.edit-icon {
+  color: #11d16c;
+}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {
+  table{
+    width: 1000px;
+  }
+}

@@ -1,8 +1,8 @@
-# Set Graph
+# Set Table
 
 ## Description
 
-Set Graph is a Single Page Web Application that I created in order to more easily keep logs of my workouts. The main technologies that I used to build this application are MongoDB, Express, and Node.js for the backend and React for the frontend. In the future, I would like to create a feature that allows the user to see how much weight they've added over time for all of their workouts in the form of various graphs. However, for the time being, it is exactly what I needed to make my workout life easier and I hope it can do the same for you!
+Set Table is a Single Page Web Application that I created in order to more easily keep logs of my workouts. The main technologies that I used to build this application are MongoDB, Express, and Node.js for the backend and React for the frontend. In the future, I would like to create a feature that allows the user to see how much weight they've added over time for all of their workouts in the form of various graphs. However, for the time being, it is exactly what I needed to make my workout life easier and I hope it can do the same for you!
 
 ## Install
 
@@ -33,4 +33,4 @@ To run the app in the browser and start up the Express server.
 
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser (if you used my port recommendations above).
 
-You should now have Set Graph up and running on your local machine. Enjoy! :muscle: :raised_hands:
+You should now have Set Table up and running on your local machine. Enjoy! :muscle: :raised_hands:

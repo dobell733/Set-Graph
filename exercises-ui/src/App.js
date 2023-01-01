@@ -13,7 +13,6 @@ function App() {
   return (
     <>
       <Router>
-
           <header>
             <h1>Set Table</h1>
             <p>An app for everday gym goers to keep a clear and concise log of their workouts</p>
@@ -41,7 +40,6 @@ function App() {
           <p>&copy; 2022 Dominic Bell</p>
           <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/1784/dumbbell">Dumbbell</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a>
           </footer>
-
       </Router>
     </>
   );
